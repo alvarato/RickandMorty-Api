@@ -1,0 +1,23 @@
+<app-nav-bar></app-nav-bar>
+<body style="padding-top: 30px;">
+    <div class="container" >
+        <div class="content" >
+            <img src="{{character.image}}" alt="">
+        </div>
+            <section style="color: white;">
+                <section style="width: max-content; margin: auto;">
+                    <p> Nombre: {{character.name}} </p>
+
+                    <p><strong class="life" *ngIf="character.status == 'Alive';">life</strong>
+                        <strong class="life dead" *ngIf="character.status != 'Alive'">life</strong>
+                        Status: {{character.status}}-{{character.species}} <br>
+                        Genero: {{character.gender}} <br> 
+                        Origen: {{character.origin.name}} <br>
+                        Ubicación: {{character.location.name}}
+                    </p>
+                    
+                </section>
+            </section>
+    </div>  
+</body>
+

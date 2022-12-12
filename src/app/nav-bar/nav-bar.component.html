@@ -1,0 +1,11 @@
+<nav class="navbar navbar-dark bg-dark" style="padding-left: 10%; padding-right: 7%;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Rick and Morty API</a>
+            <section class="d-flex">
+                <a routerLink="/home"  class="navbar-brand">Home</a>
+                <a routerLink="/characters" class="navbar-brand">Characters</a>
+              <input [(ngModel)]="busqueda" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" (click)="search()" [routerLink]="['/characters']">Search</button>
+            </section>
+    </div>
+</nav>

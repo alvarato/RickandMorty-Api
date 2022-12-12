@@ -1,0 +1,13 @@
+<app-nav-bar></app-nav-bar>
+<div class="container border">
+    <div class="row" style="justify-content: space-around; margin-top: 40px;">
+        <div class="card col-md-5" style="width: 18rem; margin-bottom: 30px;" *ngFor="let p of showInfo">
+            <img src="{{p.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="margin: auto;">{{p.name}}</h5>
+              <a class="btn btn-warning" style="margin: auto;"
+              [routerLink]="['/openCard',p.id]">Show More</a>
+            </div>
+          </div>
+</div>
+</div>
