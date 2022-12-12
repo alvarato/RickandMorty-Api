@@ -2,7 +2,7 @@ import { LowerCasePipe } from '@angular/common';
 import { IfStmt } from '@angular/compiler';
 import { Component,OnInit } from '@angular/core';
 import { JsonserviceService } from '../service/jsonservice.service';
-import { BusquedaService } from '../servicios/busqueda.service';
+import { BusquedaService } from '../service/busqueda.service';
 
 @Component({
   selector: 'app-characters',

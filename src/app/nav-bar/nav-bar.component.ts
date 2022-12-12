@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BusquedaService } from '../servicios/busqueda.service';
+import { BusquedaService } from '../service/busqueda.service';
 
 @Component({
   selector: 'app-nav-bar',
